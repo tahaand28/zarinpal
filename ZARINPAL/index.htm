@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارائه دهنده خدمات درگاه پرداخت اینترنتی | زرین‌پال</title>
+    <link rel="shortcut icon" href="img/favicone.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation.min.css"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation-utility.min.css"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="img/zarinpal-logo.svg" alt="">
+        </div>
+        <div class="menu">
+            <nav>
+                <li>درگاه پرداخت اینترنتی</li>
+                <li>توسعه دهندگان</li>
+                <li class="has-submenu">خدمات خریداران <img src="img/icon-angle.svg" alt=""
+                        style="margin-bottom: -10px; transition: 0.5s;">
+                    <div class="submenu">
+                        <ul>
+                            <li>پیگیری تراکنش
+                                <p> جستجو و پیگیری تراکنش‌های خرید </p>
+                            </li>
+                            <li>گزارش تخلف
+                                <p>ثبت و بررسی تخلفات پذیرندگان</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>تعرفه ها</li>
+                <li>تماس با ما</li>
+            </nav>
+        </div>
+        <div class="btn">
+            <button><a href="login.htm" style="text-decoration: none; color: white;">ورود یا ثبت نام</a></button>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="parent-mob-menu mobile-menu" id="mobileMenu">
+            <div class="div-menu-1">
+                <span class="close-btn" onclick="toggleMenu()">&times;</span>
+                <img src="img/zarinpal-logo.svg" alt="" style="margin-top: 17px;">
+            </div>
+            <div class="div-menu-2">
+                <ul>
+                    <li>درگاه پرداخت اینترنتی</li>
+                    <li>توسعه دهندگان</li>
+                    <li>پیگیری تراکنش</li>
+                    <li>گزارش تخلف</li>
+                    <li>تعرفه ها</li>
+                    <li>تماس با ما</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="content inner-curve" id="content">
+        <br>
+        <div class="img-mainhero">
+            <img src="img/img-mainhero.webp" alt="" height="550px" style="margin-top: -40px;">
+        </div>
+        <br>
+        <br>
+        <div class="text-box">
+            <div class="zarin-pg">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="inline-block" data-v-f2c0c544="" data-v-a3aff7bd="" style="margin: 0 0 0 2px;">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9 21C9.22227 20.9999 9.41015 20.8353 9.4396 20.615L9.6468 19.0666C9.95376 16.7647 11.7647 14.9538 14.0666 14.6468L15.615 14.4396C15.8353 14.4102 15.9999 14.2223 16 14C15.9999 13.7777 15.8353 13.5898 15.615 13.5604L14.0666 13.3532C11.7647 13.0462 9.95376 11.2353 9.6468 8.9334L9.4396 7.385C9.41015 7.16469 9.22227 7.00014 9 7C8.77773 7.00014 8.58985 7.16469 8.5604 7.385L8.3532 8.9334C8.04624 11.2353 6.23531 13.0462 3.9334 13.3532L2.385 13.5604C2.16469 13.5898 2.00014 13.7777 2 14C2.00014 14.2223 2.16469 14.4102 2.385 14.4396L3.9334 14.6468C6.23531 14.9538 8.04624 16.7647 8.3532 19.0666L8.5604 20.615C8.58985 20.8353 8.77773 20.9999 9 21Z"
+                        fill="#FFD60A"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17 12C17.127 11.9999 17.2344 11.9059 17.2512 11.78L17.3696 10.8952C17.545 9.57982 18.5798 8.545 19.8952 8.3696L20.78 8.2512C20.9059 8.23437 20.9999 8.12701 21 8C20.9999 7.87299 20.9059 7.76563 20.78 7.7488L19.8952 7.6304C18.5798 7.455 17.545 6.42018 17.3696 5.1048L17.2512 4.22C17.2344 4.09411 17.127 4.00008 17 4C16.873 4.00008 16.7656 4.09411 16.7488 4.22L16.6304 5.1048C16.455 6.42018 15.4202 7.455 14.1048 7.6304L13.22 7.7488C13.0941 7.76563 13.0001 7.87299 13 8C13.0001 8.12701 13.0941 8.23437 13.22 8.2512L14.1048 8.3696C15.4202 8.545 16.455 9.57982 16.6304 10.8952L16.7488 11.78C16.7656 11.9059 16.873 11.9999 17 12Z"
+                        fill="#FFD60A"></path>
+                </svg>
+                <p>زرین‌پال امروز بدون مرز است.</p>
+                <span>مطالعه بیشتر</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="inline-block icon" data-v-f2c0c544="" data-v-a3aff7bd="">
+                    <path d="M11.6663 6.6665L8.33301 9.99984L11.6663 13.3332" stroke="white" stroke-opacity="0.75"
+                        stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </div>
+            <br>
+            <h1>بیش از ۱۵ سال انتخاب مطمئن کسب‌وکار‌های آنلاین</h1>
+            <br>
+            <p class="p-mo">زرین‌پال، به عنوان اولین پرداخت‌یار کشور، با به‌کارگیری استانداردهای جدید در ارائه خدمات
+                درگاه پرداخت
+                اینترنتی، سرویس‌های متنوعی در حوزه‌ی پرداخت الکترونیک را برای کسب و کارها ارائه می‌کند.</p>
+            <br>
+            <div class="btn">
+                <button><a href="login.htm" style="text-decoration: none; color: white;">ورود یا ثبت نام</a></button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="our-scrolling-ticker">
+        <div class="scrolling-ticker-box">
+            <div class="scrolling-content">
+                <div><span><img src="img/logo01@2x.png" alt="" width="150px"></span></div>
+                <div><span><img src="img/logo03.svg" alt=""></span></div>
+                <div><span><img src="img/logo05@2x.png" alt="" width="200px"></span></div>
+                <div><span><img src="img/logo06.svg" alt=""></span></div>
+                <div><span><img src="img/logo-type-fa-blue.svg" alt=""></span></div>
+                <div><span><img src="img/group-10594@2x.png" alt="" width="150px"></span></div>
+                <div><span><img src="img/graphic@2x.png" alt="" width="150px"></span></div>
+
+                <!-- دوباره تکرار برای لوپ بی‌پایان -->
+                <div><span><img src="img/logo01@2x.png" alt="" width="150px"></span></div>
+                <div><span><img src="img/logo03.svg" alt=""></span></div>
+                <div><span><img src="img/logo05@2x.png" alt="" width="200px"></span></div>
+                <div><span><img src="img/logo06.svg" alt=""></span></div>
+                <div><span><img src="img/logo-type-fa-blue.svg" alt=""></span></div>
+                <div><span><img src="img/group-10594@2x.png" alt="" width="150px"></span></div>
+                <div><span><img src="img/graphic@2x.png" alt="" width="150px"></span></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="services-section">
+        <div class="services-se">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="inline-block icon" data-v-f0eec0fc="" data-v-a3aff7bd="" style="margin: 10px;">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M26.6689 35.0057H13.33C8.72639 35.0057 4.99316 31.2724 4.99316 26.6689V13.33C4.99316 8.72639 8.72639 4.99316 13.33 4.99316H26.6689C31.2724 4.99316 35.0057 8.72639 35.0057 13.33V26.6689C35.0057 31.2724 31.2724 35.0057 26.6689 35.0057Z"
+                    stroke="#19191A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path
+                    d="M28.6194 25.0014V19.7042C28.6194 14.9439 24.7595 11.084 19.9992 11.084V11.084C15.2388 11.084 11.3789 14.9439 11.3789 19.7042V25.0014"
+                    stroke="#19191A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14.0217 28.336V28.336C12.5627 28.336 11.3789 27.1522 11.3789 25.6933V23.3156C11.3789 21.8567 12.5627 20.6729 14.0217 20.6729V20.6729C15.4806 20.6729 16.6644 21.8567 16.6644 23.3156V25.6933C16.6644 27.1522 15.4806 28.336 14.0217 28.336Z"
+                    stroke="#19191A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.9768 28.336V28.336C24.5178 28.336 23.334 27.1522 23.334 25.6933V23.3156C23.334 21.8567 24.5178 20.6729 25.9768 20.6729V20.6729C27.4357 20.6729 28.6195 21.8567 28.6195 23.3156V25.6933C28.6195 27.1522 27.4357 28.336 25.9768 28.336Z"
+                    stroke="#19191A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+                <p>پشتیبانی ۲۴/۷</p>
+            </div>
+            <br>
+            <span>تیم پشتیبانی زرین‌پال به صورت ۲۴ ساعته در ۷ روز هفته، آماده‌ی پاسخگویی و راهنمایی کاربران است.</span>
+        </div>
+        <div class="services-se">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="inline-block icon" data-v-f0eec0fc="" data-v-a3aff7bd="" style="margin: 10px;">
+                <path fill-rule=" evenodd" clip-rule="evenodd"
+                    d="M5.83301 17.945C5.83301 25.3209 10.4117 31.9219 17.3201 34.5059L17.3703 34.5247C19.0661 35.159 20.9342 35.1584 22.6297 34.523L22.6703 34.5078C29.5849 31.9164 34.1663 25.307 34.1663 17.9227V11.7171C34.1663 10.2589 33.2186 8.97003 31.8268 8.5353L20.9935 5.15159C20.3464 4.94947 19.653 4.94947 19.0059 5.15159L8.17257 8.5352C6.78075 8.96992 5.83301 10.2588 5.83301 11.717V17.945Z"
+                    stroke="#19191A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M24.3749 22.916H15.626L18.5415 25.8338" stroke="#19191A" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M21.4593 14.167L24.3749 17.0848H15.626" stroke="#19191A" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+                <p>امنیت پرداخت</p>
+            </div>
+            <br>
+            <span>درگاه امن زرین‌پال، امنیت اطلاعات بانکی افراد در هنگام پرداخت‌های اینترنتی را تضمین می‌کند.</span>
+        </div>
+        <div class="services-se">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="inline-block icon" data-v-f0eec0fc="" data-v-a3aff7bd="" style="margin: 10px;">
+                <path d="M26.6689 19.166L30.0037 22.5007L26.6689 25.8355" stroke="#19191A" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M13.3298 19.9995L9.99512 16.6648L13.3298 13.3301" stroke="#19191A" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M19.999 22.5007H30.0032" stroke="#19191A" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                <path d="M9.99512 16.6647H19.9993" stroke="#19191A" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                <path
+                    d="M19.9994 9.99525H31.6709C33.5134 9.99525 35.0057 11.4875 35.0057 13.33V31.6709C35.0057 33.5134 33.5134 35.0057 31.6709 35.0057H23.3341C21.4917 35.0057 19.9994 33.5134 19.9994 31.6709V8.32789C19.9994 6.48545 18.5071 4.99316 16.6647 4.99316H8.32789C6.48545 4.99316 4.99316 6.48545 4.99316 8.32789V25.0015C4.99316 26.8439 6.48545 28.3362 8.32789 28.3362H19.9994"
+                    stroke="#19191A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+                <p>مسیردهی هوشمند</p>
+            </div>
+            <br>
+            <span>امکان اتصال به ۶ درگاه پرداخت معتبر، باعث می‌شود کاربران به بهترین درگاه پرداخت با بالاترین میزان
+                تراکنش موفق هدایت شوند.</span>
+        </div>
+        <div class="services-se">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="inline-block icon" data-v-f0eec0fc="" data-v-a3aff7bd="">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20 35V35C11.715 35 5 28.285 5 20V20C5 11.715 11.715 5 20 5V5C28.285 5 35 11.715 35 20V20C35 28.285 28.285 35 20 35Z"
+                    stroke="#19191A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M26.6663 16.667L18.333 25.0003L13.333 20.0003" stroke="#19191A" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+                <p>ضمانت پرداخت</p>
+            </div>
+            <br>
+            <span>درگاه پرداخت زرین‌پال، تجربه‌ی پرداخت اینترنتی آسان، سریع و امن را به مشتریان کسب و کارهای آنلاین
+                هدیه می‌دهد.</span>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="mohandas">
+
+
+        <div class="mohandas-da">
+            <div class="img-mainhero">
+                <img src="img/Img_PGSection.webp" alt="" width="500px" height="400px">
+            </div>
+            <div class="text-box">
+                <p style="color: #616462 !important;">درگاه پرداخت اینترنتی IPG</p>
+                <br>
+                <h2 style="font-size: 28px;">مهندسی شده برای رشد و فروش بیش‌تر</h2>
+                <br>
+                <span style="color: gray !important; font-size: 14px;
+    font-weight: 500;">درگاه پرداخت زرین‌پال، با اتصال همزمان به درگاه‌های متنوع و معتبر بانکی (PSPها)، کاربران را به
+                    سریع‌ترین و مطمئن‌ترین درگاه بانکی منتقل می‌کند و به واسطه‌ی قابلیت مسیردهی هوشمند، باعث افزایش فروش
+                    و درصد تراکنش‌های موفق می‌شود.</span>
+                <br>
+                <br>
+                <br>
+                <div class="btns">
+                    <div class="btn">
+                        <button>ساخت درگاه پرداخت</button>
+                    </div>
+                    <br>
+                    <div class="btn-m">
+
+                        <button>مطالعه بیشتر <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="inline-block opacity-100" data-v-05484e35=""
+                                data-v-a3aff7bd="">
+                                <path d="M4.00977 12.4805H18.9998" stroke="#19191A" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M10.013 6.48828L4.00195 12.5003L10.013 18.5123" stroke="#19191A"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></button>
+
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="vigheh">
+                    <div class="v">
+                        <div><svg width="16" height="40" viewBox="0 0 16 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="inline-block" data-v-100cc717=""
+                                data-v-a3aff7bd="">
+                                <path d="M14.6666 16.6665L6.33331 24.9998L1.33331 19.9998" stroke="#0A33FF"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>افزونه‌های متنوع </div>
+                    </div>
+                    <div class="v">
+                        <div> <svg width="16" height="40" viewBox="0 0 16 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="inline-block" data-v-100cc717=""
+                                data-v-a3aff7bd="">
+                                <path d="M14.6666 16.6665L6.33331 24.9998L1.33331 19.9998" stroke="#0A33FF"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>۶ درگاه همزمان</div>
+                    </div>
+                    <div class="v">
+                        <div> <svg width="16" height="40" viewBox="0 0 16 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="inline-block" data-v-100cc717=""
+                                data-v-a3aff7bd="">
+                                <path d="M14.6666 16.6665L6.33331 24.9998L1.33331 19.9998" stroke="#0A33FF"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>تسویه‌ حساب روزانه</div>
+                    </div>
+                    <div class="v">
+                        <div> <svg width="16" height="40" viewBox="0 0 16 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="inline-block" data-v-100cc717=""
+                                data-v-a3aff7bd="">
+                                <path d="M14.6666 16.6665L6.33331 24.9998L1.33331 19.9998" stroke="#0A33FF"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>کارمزد رایگان</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <br>
+    <br>
+    <div class="dark-content">
+        <div class="dark-content-2">
+            <div class="tt">
+                <p>توسعه‌دهندگان</p>
+                <br>
+                <h1>راهنمای کامل و جامع سرویس‌ها و API های زرین‌پال</h1>
+                <br>
+                <span>زرین‌پال با کمک افزونه‌ها و نمونه کدهای آماده درگاه پرداخت زرین‌پال، دردسرهای افزودن به سایت و
+                    نیاز به کدنویسی را به حداقل رسانده است.</span>
+                <br>
+                <br>
+                <div class="mostanadat">
+                    <button>مستندات فنی</button>
+                </div>
+            </div>
+            <div class="Img_Devdocs">
+                <img src="img/Img_Devdocs.webp" alt="" width="450px" height="auto">
+            </div>
+            <div class="buttoncustom">
+                <div><img data-v-05d9e79f="" data-v-3e423c09="" src="img/icon-arrowtopleftsmall.svg" alt=""
+                        loading="lazy">مستندات API</div>
+                <div><img data-v-05d9e79f="" data-v-3e423c09="" src="img/icon-arrowtopleftsmall.svg" alt=""
+                        loading="lazy">مستندات درگاه پرداخت</div>
+                <div><img data-v-05d9e79f="" data-v-3e423c09="" src="img/icon-arrowtopleftsmall.svg" alt=""
+                        loading="lazy">مستندات SDK</div>
+                <div><img data-v-05d9e79f="" data-v-3e423c09="" src="img/icon-arrowtopleftsmall.svg" alt=""
+                        loading="lazy">افزونه ها
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="content-acker">
+        <div class="content-acker-2">
+            <div class="c-1">
+                <div>
+                    <img src="img/Img_AppOS.webp" alt="" width="70%" height="100%">
+                </div>
+            </div>
+            <div class="c-2">
+                <p>اپلیکیشن موبایل</p>
+                <br>
+                <h2>زرین‌پال من؛ مدیریت درگاه پرداخت</h2>
+                <br>
+                <span>اپلیکیشن کاربردی زرین‌پال من، علاوه بر تمام ویژگی‌های وب‌سایت زرین‌پال، برای تجربه کاربری بهتر در
+                    گوشی‌های هوشمند بومی‌سازی شده است.</span>
+                <br>
+                <br>
+                <div class="btn">
+                    <button>دانلود اپلیکیشن</button>
+                </div>
+            </div>
+            <div class="c-3">
+                <div><svg width="16" height="40" viewBox="0 0 16 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-100cc717="" data-v-a3aff7bd="">
+                        <path d="M14.6666 16.6665L6.33331 24.9998L1.33331 19.9998" stroke="#0A33FF" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>مدیریت تراکنش‌ها</div>
+                <div><svg width="16" height="40" viewBox="0 0 16 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-100cc717="" data-v-a3aff7bd="">
+                        <path d="M14.6666 16.6665L6.33331 24.9998L1.33331 19.9998" stroke="#0A33FF" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>مدیریت تسویه‌‌حساب‌‌ها</div>
+                <div><svg width="16" height="40" viewBox="0 0 16 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-100cc717="" data-v-a3aff7bd="">
+                        <path d="M14.6666 16.6665L6.33331 24.9998L1.33331 19.9998" stroke="#0A33FF" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>مدیریت محصولات</div>
+                <div><svg width="16" height="40" viewBox="0 0 16 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-100cc717="" data-v-a3aff7bd="">
+                        <path d="M14.6666 16.6665L6.33331 24.9998L1.33331 19.9998" stroke="#0A33FF" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>ارتباط سریع با پشتیبانی</div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="nazarat">
+        <div class="text-box-nazar">
+            <h2>نظر کاربران درباره زرین‌پال</h2>
+            <span>بازتاب تجربه پذیرندگان از خدمات زرین‌پال</span>
+        </div>
+        <br>
+
+        <div class="parent-nazar">
+            <div class="nazar1">
+                <div class="star">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                </div>
+                <div>
+                    <span style="color: #2c2c2d;
+    font-size: 14px; ">
+                        سهولت فرایند پرداخت در زرین‌پال این امکان را می‌دهد تا کاربر با کمترین کلیک و حس خوب، خرید خود
+                        را نهایی کند.
+                    </span>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="profile">
+                        <img src="img/saeed-abdollahiha.jpg" alt="">
+                        <div class="pro-text-info">
+                            <p>سعید عبدالهی‌ها</p>
+                            <p>هم بنیانگذار آمیرزا و باقلوا</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nazar2">
+                <div class="star">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                </div>
+                <div>
+                    <span style="color: #2c2c2d;
+    font-size: 14px;">
+                        تسویه حساب منظم، پشتیبانی اختصاصی و بروزرسانی به موقع از ویژگی‌های کار با زرین‌پال است.
+                    </span>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="profile">
+                        <img src="img/manuel-ohanjanians.jpg" alt="">
+                        <div class="pro-text-info">
+                            <p>مانوئل اوهانجانیانس</p>
+                            <p>مدیرعامل و هم‌بنیانگذار ایسمینار</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nazar3">
+                <div class="star">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                </div>
+                <div>
+                    <span style="color: #2c2c2d;
+    font-size: 14px;">
+                        گزارش گیری عالی، امکان پیگیری تراکنش‌ها، تسویه حساب سریع و تفکیک درآمدها کار را بسیار آسان کرده
+                        است.
+                    </span>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="profile">
+                        <img src="img/amir-piroudin.jpg" alt="">
+                        <div class="pro-text-info">
+                            <p>امیر پیرودین</p>
+                            <p>هم‌‌بنیانگذار اپ استور اناردونی</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parent-nazar-2">
+            <div class="nazar4">
+                <div class="star">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                </div>
+                <div>
+                    <span style="color: #2c2c2d;
+    font-size: 14px;">
+                        پشتیبانی قوی، امنیت و حس شهرت زرین‌پال، یکی از دلایل همکاری با زرین‌پال است و کاربران با اطمینان
+                        کامل از امنیت درگاه و بدون چون و چرا و خیالی آسوده خرید خود را به راحتی انجام می‌دهند.
+                    </span>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="profile">
+                        <img src="img/amir-tavakoli-haghighi.jpg" alt="">
+                        <div class="pro-text-info">
+                            <p>امیر توکلی حقیقی</p>
+                            <p>تیم کوییز آوکینگز</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nazar5">
+                <div class="star">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                </div>
+                <div>
+                    <span style="color: #2c2c2d;
+    font-size: 14px;">
+                        از همان ابتدای شروع به کار جابینجا تاکنون، سرویس خوب زرین‌پال تبدیل به یکی از بخش‌های کسب و کار
+                        ما شده است. ارائه‌ی ابزارهای گزارش‌گیری عالی، پشتیبانی منحصر به فرد و پیشرو بودن در خلق تجربه‌ی
+                        خرید آسان، زرین‌پال را تبدیل به راهکار اصلی ما برای پرداخت آنلاین کرده است.
+                    </span>
+                    <br>
+                    <br>
+                    <div class="profile">
+                        <img src="img/mohammad-khani.jpg" alt="" style="    border-radius: 100%;     height: 60px;
+    width: 60px;">
+                        <div class="pro-text-info">
+                            <p>محمدرضا خانی</p>
+                            <p>مدیرعامل و هم‌بنیانگذار جابینجا</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nazar6">
+                <div class="star">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block" data-v-455943e9="" data-v-a3aff7bd="">
+                        <path
+                            d="M9.13589 3.48359C9.52162 2.82132 10.4784 2.82132 10.8641 3.48359L12.3645 6.05954C12.5058 6.30214 12.7425 6.47417 13.0169 6.53359L15.9304 7.1645C16.6795 7.3267 16.9752 8.23663 16.4645 8.80814L14.4783 11.0311C14.2912 11.2404 14.2008 11.5188 14.229 11.7981L14.5293 14.764C14.6065 15.5265 13.8325 16.0889 13.1312 15.7798L10.4032 14.5777C10.1463 14.4645 9.85366 14.4645 9.59675 14.5777L6.86883 15.7798C6.16749 16.0889 5.39346 15.5265 5.47067 14.764L5.77096 11.7981C5.79924 11.5188 5.7088 11.2404 5.52174 11.0311L3.5355 8.80814C3.02484 8.23663 3.3205 7.3267 4.06955 7.1645L6.98306 6.53359C7.25745 6.47417 7.49423 6.30214 7.63553 6.05954L9.13589 3.48359Z"
+                            fill="#FFD60A"></path>
+                    </svg>
+                </div>
+                <div>
+                    <span style="color: #2c2c2d;
+    font-size: 14px;">
+                        زرین‌پال نه فقط بخاطر کاربرد درگاه پرداخت، بخاطر داشتن تیم قوی و فراهم کردن زیرساخت بسیار
+                        کاربردی، بهترین گزینه برای انتخاب به عنوان درگاه پرداخت می‌باشد.
+                    </span>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="profile">
+                        <img src="img/ali-haji-mohammadi.jpg" alt="">
+                        <div class="pro-text-info">
+                            <p>علی حاجی محمدی</p>
+                            <p>بنیانگذار ژاکت</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="accordion">
+        <div style="text-align: center;">
+            <h1>سوالات متداول</h1>
+        </div>
+        <br>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h3>چگونه در زرین‌پال ثبت‌نام کنم؟</h3>
+                <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="accordion-content">
+                <p style="white-space: pre-line; font-size: 14px; padding: 20px; ">۱. به صفحه‌ی زرین‌پال بروید.
+                    ۲. نام، نام خانوادگی و شماره‌ی همراه خود را وارد نمایید.
+                    ۳. کد پیامک شده را در بخش مربوطه وارد کنید.
+                    ۴. پس از ورود به پنل مدیریتی خود در زرین‌پال، نسبت به تکمیل اطلاعات اقدام نمایید.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h3>چگونه درگاه پرداخت بسازم؟</h3>
+                <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="accordion-content">
+                <p style=" white-space: pre-line; font-size: 14px; padding: 20px;">۱. پس از ورود به حساب کاربری
+                    خود در زرین‌پال، روی آیکونِ پیشخوان کلیک کنید.
+                    ۲. سپس گزینه‌ی درخواست درگاه پرداخت را انتخاب نمایید.
+                    ۳. در پنجره‌ی «افزودن درگاه پرداخت»، آدرس وب‌سایت خود را وارد کنید.
+                    ۴. عنوان وب‌سایت، شماره تماس پشتیبانی و دسته‌بندی حوزه‌ی فعالیت خود را مشخص کنید.
+                    ۵. حساب بانکی موردنظرتان را جهت تسویه‌حساب وارد کنید.</p>
+            </div>
+
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h3>تسویه‌حساب چه زمانی انجام می‌شود؟</h3>
+                <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="accordion-content">
+                <p style=" font-size: 14px; padding: 20px;">
+                    پس از کسر کارمزد هنگام هر تراکنش، مبلغ پرداختی حداکثر یک روز پس از انجام تراکنش و تا ساعت ۱۱ صبح، به
+                    حساب شخص واریز شده و تسویه‌حساب انجام می‌شود. لازم به توضیح است که تسویه‌حساب در روزهای تعطیل رسمی،
+                    انجام نمی‌شود.
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h3>چگونه با پشتیبانی زرین‌پال تماس بگیرم؟</h3>
+                <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="accordion-content">
+                <p style=" font-size: 14px; padding: 20px;">
+                    به دو روش «ارسال تیکت» و «تماس تلفنی» می‌توانید با کارشناسان امور مشتریان زرین‌پال در ارتباط باشید.
+                    از منوی سمت راست پیشخوان خود، روی گزینه‌ی تیکت‌ها کلیک کنید.
+                    در صورتی‌که پاسخ سوال خود را در «گزینه‌های دیگر» پیدا نکردید، با انتخاب گزینه‌ی تیکت جدید، پرسش خود
+                    را مطرح کنید.
+                    حداکثر زمان پاسخ‌گویی به تیکت‌ها، ۱۲ ساعت است، چنان‌چه در این بازه پیامی دریافت نکردید، با کارشناسان
+                    امور مشتریان زرین‌پال، با شماره تلفن ۰۲۱۴۵۶۲۸۰۰۰ تماس بگیرید.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="btn-mm">
+            <button>مطالعه بیشتر
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="inline-block opacity-100" data-v-05484e35="" data-v-a3aff7bd="">
+                    <path d="M4.00977 12.4805H18.9998" stroke="#19191A" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path d="M10.013 6.48828L4.00195 12.5003L10.013 18.5123" stroke="#19191A" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="tablechat">
+        <div>
+            <div class="back-zar">
+                <img src="img/img-zarinpallogo.svg" alt="">
+            </div>
+            <div style="text-align: center;" class="tex-gggg">
+                <br>
+                <h1>به خانواده یک میلیونی زرین‌پال بپیوندید</h1>
+                <br>
+                <p>یک ماه رایگان، هدیه‌ی عضویت زرین‌پال به شما</p>
+            </div>
+            <br>
+            <div class="btn-a">
+                <button>همین حال شروع کنید</button>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="pattern">
+                <img src="img/img-pattern.svg" alt="">
+            </div>
+            <div class="Img_Collection">
+                <img src="img/Img_Collection.webp" alt="">
+            </div>
+
+        </div>
+
+    </div>
+    <br>
+    <footer class="footer">
+        <div class="banner">
+            <div class="texts">
+                <div class="fffff">
+                    <p style="font-size: 20px;
+    font-weight: 700;">پشتیبانی ۲۴ ساعته، ۷ روز هفته</p>
+                    <br>
+                    <div class="span-rrrr">
+                        <span style="color: #19191abf;" class="span-gray">پشتیبانی پذیرندگان: </span>
+                        <span class="span-gray">۴۱۲۳۹-۰۲۱ </span>
+                        <span style="color: #19191abf;" class="span-gray">| پشتیبانی خریداران: </span>
+                        <span class="span-gray">۴۵۶۲۸۰۰۰-۰۲۱</span>
+                    </div>
+                </div>
+                <div class="btn-dar">
+                    <button><span>درخواست پشتیبانی</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="inline-block opacity-100" data-v-05484e35=""
+                            data-v-a3aff7bd="">
+                            <path d="M4.00977 12.4805H18.9998" stroke="#19191A" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M10.013 6.48828L4.00195 12.5003L10.013 18.5123" stroke="#19191A" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="links2">
+            <div class="menu-footer">
+                <div class="menu-3">
+                    <h4>منابع</h4>
+                    <br>
+                    <div class="mamas">
+                        <a href=""> درگاه پرداخت اینترنتی </a>
+                        <a href=""> بانکداری باز </a>
+                        <a href=""> تسویه مستقیم </a>
+                        <a href=""> پیرو (Pay-Row) </a>
+                        <a href=""> توسعه‌دهندگان </a>
+                        <a href=""> اپلیکیشن موبایل </a>
+                        <a href=""> وبلاگ </a>
+                        <a href=""> دریافت شماره شبا </a>
+                        <a href=""> سوالات متداول </a>
+                        <a href=""> همکاری در فروش </a>
+                        <a href=""> کشف باگ زرین‌پال </a>
+                        <a href=""> تعرفه‌ها </a>
+                    </div>
+                </div>
+                <div class="menu-2">
+                    <h4>زرین‌پال</h4>
+                    <br>
+                    <div class="mamas">
+                        <a href=""> تماس با ما </a>
+                        <a href=""> پیگیری تراکنش </a>
+                        <a href=""> درباره ما </a>
+                        <a href=""> حریم خصوصی </a>
+                        <a href=""> قوانین و مقررات </a>
+                    </div>
+                </div>
+                <div class="menu-1">
+                    <h4>خدمات بیشتر</h4>
+                    <br>
+                    <div class="mamas">
+                        <a href=""> نئوزرین </a>
+                        <a href=""> زرین‌اکسپرس </a>
+                        <a href=""> زرین‌پلاس </a>
+                        <a href=""> زرین‌کراد </a>
+                        <a href=""> زرین‌دکس </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="enamad">
+                <img src="img/enamad-full-star-removebg-preview.png" alt="" width="200px">
+            </div>
+        </div>
+
+
+        <div class="socal-footer">
+            <div class="zarinpal-logosvg">
+                <img src="img/zarinpal-logo.svg" alt="" width="100px">
+            </div>
+            <div class="social-links">
+                <img src="img/subtract.svg" alt="">
+                <img src="img/vector.svg" alt="">
+                <img src="img/subtract1.svg" alt="">
+                <img src="img/vector1.svg" alt="">
+                <img src="img/vector2.svg" alt="">
+            </div>
+
+        </div>
+        <br>
+        <span class="hr"></span>
+        <br>
+        <br>
+        <div class="text-footer">
+            <span>© ‌‌زرین‌پال ۱۴۰۴ - 1389</span>
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
