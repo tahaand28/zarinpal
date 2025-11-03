@@ -8,10 +8,8 @@
 
 
 
-   <div style="display: flex; align-items: center;">
-    <a href="https://www.instagram.com/mohamad.taha_ahmadi/?__pwa=1" target="_blank" rel="noopener noreferrer">برای عکس
-        های بیشتر به ایسنتاگرام من مراجعه فرمایید</a>
-</div>
+
+   <img src="vecteezy_instagram-logo-png-instagram-icon-transparent_18930415.png" width="30px"><a href="https://www.instagram.com/mohamad.taha_ahmadi/?__pwa=1" target="_blank" rel="noopener noreferrer">برای عکس های بیشتر به ایسنتاگرام من مراجعه فرمایید</a>
 
 
    
