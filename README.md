@@ -4,16 +4,11 @@
 
 
 
-   <img src="Screenshot (117).png">
-   <img src="Screenshot (116).png">
-   <img src="Screenshot (134).png">
-   <img src="Screenshot (125).png">
-   <img src="Screenshot (133).png">
-   <img src="Screenshot (126).png">
+
 
 
 
 <div style="display: block;">
-    <img src="Screenshot(116).png" alt="">
-    <img src="Screenshot(134).png" alt="">
+    <img src="Screenshot(116).png">
+    <img src="Screenshot(134).png">
 </div>
