@@ -5,6 +5,6 @@
 
 
    <img src="Screenshot (117).png">
-   <img src="Screenshot (116).png" style="text-align: center;">
+   <img src="Screenshot (116).png" text-align: center;>
    <img src="Screenshot (125).png">
    <img src="Screenshot (133).png">
